@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    min-height: 100%;
+  }
+
+  body {
+    @apply bg-light-bg text-primary-blue antialiased;
+  }
+
+  a {
+    @apply no-underline;
+  }
+}
+
+@layer components {
+  .app-container {
+    @apply mx-auto w-full max-w-app px-4 sm:px-6 lg:px-8;
+  }
+
+  .tiptap img {
+    @apply h-auto max-w-full rounded-lg;
+  }
+
+  .tiptap p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    @apply pointer-events-none float-left h-0 text-slate-400;
+  }
+}

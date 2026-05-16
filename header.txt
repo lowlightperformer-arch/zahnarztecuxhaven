@@ -1,0 +1,35 @@
+import { CATEGORY_TYPE_LABELS, type Category, type CategoryType, type CmsClinic } from '@/lib/cms'
+import AdminHomepageCms from './AdminHomepageCms'
+
+type CategoryFormState = {
+  name: string
+  slug: string
+  type: CategoryType
+  h1: string
+  description: string
+  metaTitle: string
+  metaDescription: string
+}
+
+type ClinicFormState = {
+  name: string
+  description: string
+  phone: string
+  email: string
+  rating: string
+  reviewsCount: string
+  imageUrl: string
+  googleMapsUrl: string
+  leadDoctor: string
+  categoryIds: string[]
+}
+
+type BulkImportCategoryPayload = {
+  name: string
+  slug: string
+  type: CategoryType
+  h1: string
+  description: string
+  metaTitle: string
+  metaDescription: string
+}

@@ -1,0 +1,22 @@
+type BulkImportClinicPayload = {
+  name: string
+  description: string
+  phone: string
+  email: string
+  rating: string
+  reviewsCount: string
+  imageUrl: string
+  googleMapsUrl: string
+  leadDoctor: string
+  categoryIds: string[]
+}
+
+const emptyCategoryForm: CategoryFormState = {
+  name: "",
+  slug: "",
+  type: "general",
+  h1: "",
+  description: "",
+  metaTitle: "",
+  metaDescription: "",
+}

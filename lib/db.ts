@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs'
 import path from 'path'
 
-import type { BlogPost, Category, CmsClinic, CmsDb } from './cms'
+import type { BlogPost, Category, CmsClinic, CmsDb, StaticPage } from './cms'
 
 const dbPath = path.join(process.cwd(), 'data', 'db.json')
 

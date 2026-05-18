@@ -86,6 +86,7 @@ export interface SiteSettings {
   aboutUsSlug?: string
   gscMetaTag?: string
   email?: string
+  generalEmail?: string
   robotsTxt?: string
 }
 

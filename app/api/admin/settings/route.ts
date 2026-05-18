@@ -29,7 +29,7 @@ export async function PUT(request: Request) {
       gscMetaTag: String(payload.gscMetaTag || '').trim(),
       generalEmail: String(payload.generalEmail || '').trim(),
       aboutUsSlug: String(payload.aboutUsSlug || 'ueber-uns').trim()
-    } as any
+    }
 
     await writeDb(db)
     return NextResponse.json({ ok: true, settings: db.siteSettings })

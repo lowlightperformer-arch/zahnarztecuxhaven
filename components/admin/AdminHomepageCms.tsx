@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { Plus, Trash2, Save, Home, HelpCircle, LayoutText } from 'lucide-react'
+import { Plus, Trash2, Save, Home, HelpCircle, FileText } from 'lucide-react'
 import TiptapEditor from './TiptapEditor'
 import type { HomepageConfig, FaqItem } from '@/lib/cms'
 
@@ -120,7 +120,7 @@ export default function AdminHomepageCms() {
             activeTab === 'seo' ? 'border-b-2 border-accent-blue text-accent-blue' : 'text-slate-500 hover:text-primary-blue'
           }`}
         >
-          <LayoutText className="h-4 w-4" />
+          <FileText className="h-4 w-4" />
           SEO Text
         </button>
         <button
